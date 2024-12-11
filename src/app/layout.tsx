@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./styles/globals.css";
+import "./styles/login.module.css";
+import "./styles/page.module.css";
 
 export const metadata: Metadata = {
   title: "Keep Track",
