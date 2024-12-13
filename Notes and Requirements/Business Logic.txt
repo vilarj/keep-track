@@ -1,0 +1,22 @@
+Features:
+-> Cargar la información registrada del cliente en espera / a pasar de la secretaria hacia el doctor. Por ejemplo:
+* Records de pacientes que incluye:
+- Observaciones
+- Procedimiento a realizar
+- Diagnostico
+-> Mostrar
+
+Roles:
+- Secretaria:
+-> Acceder datos generals del paciente como:
+* edad
+* nombre
+* direccion
+* numero de telefono
+* cedula
+-> Registrar, cancelar, o actualizar citas de los pacientes.
+-> 
+
+- Doctor:
+-> Acceder al record del paciente. 
+-> Registrar nuevo records y actualizar records existentes.
