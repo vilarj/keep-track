@@ -5,7 +5,7 @@ function Hero() {
     <div>
       <section className={styles.hero}>
         <h1 className={styles.heroHeading}>
-          Revolutionize Dental Practice Management with Keep Track!
+          Revolutionize Dental Practice Management with Keep Track
         </h1>
         <p className={styles.heroSubtext}>
           Simplify patient records, manage appointments, and grow your practice

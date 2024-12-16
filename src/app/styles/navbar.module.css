@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #3cc1e4;
+  background-color: black;
 }
 
 .logo a {
@@ -31,6 +31,16 @@
 }
 
 .navLinks li a:hover {
-  color: #333;
   font-weight: bold;
+}
+
+.icon {
+  margin-right: 8px;
+  vertical-align: middle;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navLinks a:hover .icon {
+  color: #00f2fe;
 }

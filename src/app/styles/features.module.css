@@ -3,7 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 50px;
-  background-color: #3cc1e4;
+  background-color: black;
 }
 
 .feature {
@@ -20,7 +20,7 @@
 .feature:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  background-color: black;
+  background-color: #3cc1e4;
   color: white;
 }
 
