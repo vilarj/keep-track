@@ -10,13 +10,15 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
-          <Image src={logo} width={450} height={150} alt="Keep Track Logo" />
+          <Link href="/">
+            <Image src={logo} width={450} height={150} alt="Keep Track Logo" />
+          </Link>
         </div>
       </div>
       <ul className={styles.navLinks}>
         <li>
           <Link href="/about">
-            About Us <MdContactSupport className={styles.icon} />
+            About <MdContactSupport className={styles.icon} />
           </Link>
         </li>
         <li>

@@ -1,0 +1,48 @@
+.login {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.login h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0073e6;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login label {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.login input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.login button {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #005bb5;
+}

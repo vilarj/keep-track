@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import image from "../../../assets/expediente.jpg";
 import styles from "../styles/hero.module.css";
 
@@ -17,7 +18,9 @@ function Hero() {
             Simplify patient records, manage appointments, and grow your
             practice seamlessly.
           </p>
-          <button className={styles.heroButton}>Get Started Now</button>
+          <Link href="/pricing" passHref>
+            <button className={styles.heroButton}>Get Started Now</button>
+          </Link>
         </div>
       </section>
     </div>
