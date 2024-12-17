@@ -1,8 +1,20 @@
 .login {
   padding: 2rem;
+<<<<<<< HEAD
   color: #333;
   text-align: center;
   background-color: #fff;
+=======
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.login h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0073e6;
+>>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
 }
 
 .login form {
@@ -14,32 +26,53 @@
 .login label {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+<<<<<<< HEAD
   color: #333;
+=======
+>>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
 }
 
 .login input {
   margin-top: 0.5rem;
   padding: 0.5rem;
   font-size: 1rem;
+<<<<<<< HEAD
   border: 1px solid #f9f9f9;
   border-radius: 8px;
   width: 100%;
   max-width: 300px;
   background-color: #000;
   color: #fff;
+=======
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+>>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
 }
 
 .login button {
   margin-top: 1rem;
   padding: 0.5rem 2rem;
   font-size: 1rem;
+<<<<<<< HEAD
   color: #fff;
   background-color: #000;
   border: none;
   border-radius: 8px;
+=======
+  color: white;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 5px;
+>>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
   cursor: pointer;
 }
 
 .login button:hover {
+<<<<<<< HEAD
   background-color: #333;
+=======
+  background-color: #005bb5;
+>>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
 }

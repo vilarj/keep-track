@@ -11,7 +11,11 @@ export default function Navbar() {
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
           <Link href="/">
+<<<<<<< HEAD
             <Image src={logo} width={450} height={150} alt="KeepTrack Logo" />
+=======
+            <Image src={logo} width={450} height={150} alt="Keep Track Logo" />
+>>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
           </Link>
         </div>
       </div>

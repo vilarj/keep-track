@@ -1,7 +1,11 @@
 "use client";
+<<<<<<< HEAD
 import Image from "next/image";
 import { useState } from "react";
 import image from "../../../public/KeepTrack.png";
+=======
+import { useState } from "react";
+>>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
 import styles from "../styles/login.module.css";
 
 function Login() {
@@ -15,6 +19,7 @@ function Login() {
 
   return (
     <section className={styles.login}>
+<<<<<<< HEAD
       <Image
         priority
         src={image}
@@ -23,6 +28,9 @@ function Login() {
         alt="KeepTrack Logo"
       />
 
+=======
+      <h2>Login</h2>
+>>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
       <form onSubmit={handleSubmit}>
         <label>
           Email:
