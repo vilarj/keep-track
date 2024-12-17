@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import "./styles/dashboard.module.css";
+import Footer from "./components/Footer";
 import "./styles/globals.css";
-import "./styles/login.module.css";
-import "./styles/page.module.css";
-import "./styles/records.module.css";
 
 export const metadata: Metadata = {
   title: "Keep Track",
@@ -16,7 +13,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="layout">
+          <main className="content">{children}</main>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
