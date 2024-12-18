@@ -1,20 +1,12 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import IRecord from "../interfaces/IRecord";
 import styles from "../styles/dashboard.module.css";
 
-interface Record {
-  id: string;
-  firstName: string;
-  middleName?: string;
-  lastName: string;
-  phoneNumber: string;
-  dateOfBirth: string;
-}
-
 const Dashboard = () => {
-  const [records, setRecords] = useState<Record[]>([]);
-  const [filteredRecords, setFilteredRecords] = useState<Record[]>([]);
+  const [records, setRecords] = useState<IRecord[]>([]);
+  const [filteredRecords, setFilteredRecords] = useState<IRecord[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const router = useRouter();
   let logoutTimer: NodeJS.Timeout;
