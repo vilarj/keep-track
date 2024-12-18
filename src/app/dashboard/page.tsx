@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import styles from "../styles/dashboard.module.css";
 
@@ -15,14 +16,25 @@ const Dashboard = () => {
   const [records, setRecords] = useState<Record[]>([]);
   const [filteredRecords, setFilteredRecords] = useState<Record[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const router = useRouter();
+  let logoutTimer: NodeJS.Timeout;
+
+  const handleLogout = () => {
+    localStorage.removeItem("authToken");
+    router.push("/login");
+  };
+
+  const resetTimer = () => {
+    clearTimeout(logoutTimer);
+    logoutTimer = setTimeout(handleLogout, 300000);
+  };
 
   useEffect(() => {
-    // Simulating an API call
     fetch("/api/clients")
       .then((response) => response.json())
       .then((data) => {
         setRecords(data);
-        setFilteredRecords(data.slice(0, 20)); // Initial 20 records
+        setFilteredRecords(data.slice(0, 20));
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -35,11 +47,29 @@ const Dashboard = () => {
         record.lastName.toLowerCase().includes(lowerCaseTerm) ||
         record.phoneNumber.includes(searchTerm)
     );
-    setFilteredRecords(filtered.slice(0, 20)); // Only show first 20 matches
+    setFilteredRecords(filtered.slice(0, 20));
   }, [searchTerm, records]);
+
+  useEffect(() => {
+    window.addEventListener("mousemove", resetTimer);
+    window.addEventListener("keydown", resetTimer);
+
+    logoutTimer = setTimeout(handleLogout, 300000);
+
+    return () => {
+      window.removeEventListener("mousemove", resetTimer);
+      window.removeEventListener("keydown", resetTimer);
+      clearTimeout(logoutTimer);
+    };
+  }, []);
 
   return (
     <div className={styles.dashboard}>
+      <header className={styles.header}>
+        <button onClick={handleLogout} className={styles.logoutButton}>
+          Logout
+        </button>
+      </header>
       <div className={styles.searchBar}>
         <input
           type="text"
