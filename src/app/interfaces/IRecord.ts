@@ -4,6 +4,7 @@ export default interface Record {
   firstName: string;
   middleName?: string;
   lastName: string;
+  address: string;
   phoneNumber: string;
   dateOfBirth: string;
   lastVisit: string;
