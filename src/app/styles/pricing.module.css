@@ -19,11 +19,7 @@
 }
 
 .pricingCard {
-<<<<<<< HEAD
   background: #fff;
-=======
-  background: white;
->>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 2rem;
@@ -63,11 +59,7 @@
 
 .selectButton {
   background-color: #0073e6;
-<<<<<<< HEAD
   color: #fff;
-=======
-  color: white;
->>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
   border: none;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
