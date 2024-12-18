@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import image from "../../../assets/expediente.jpg";
+import image from "../../../public/expediente.jpg";
 import Navbar from "../components/Navbar";
 import styles from "../styles/landing.module.css";
 

@@ -19,7 +19,7 @@
 }
 
 .pricingCard {
-  background: white;
+  background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 2rem;
@@ -59,7 +59,7 @@
 
 .selectButton {
   background-color: #0073e6;
-  color: white;
+  color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;

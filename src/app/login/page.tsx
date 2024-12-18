@@ -1,5 +1,7 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
+import image from "../../../public/KeepTrack.png";
 import styles from "../styles/login.module.css";
 
 function Login() {
@@ -13,7 +15,14 @@ function Login() {
 
   return (
     <section className={styles.login}>
-      <h2>Login</h2>
+      <Image
+        priority
+        src={image}
+        height={150}
+        width={350}
+        alt="KeepTrack Logo"
+      />
+
       <form onSubmit={handleSubmit}>
         <label>
           Email:

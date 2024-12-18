@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaServicestack, FaSignInAlt } from "react-icons/fa";
 import { MdContactSupport } from "react-icons/md";
-import logo from "../../../assets/KeepTrack.png";
+import logo from "../../../public/KeepTrack.png";
 import styles from "../styles/navbar.module.css";
 
 export default function Navbar() {
@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
           <Link href="/">
-            <Image src={logo} width={450} height={150} alt="Keep Track Logo" />
+            <Image src={logo} width={450} height={150} alt="KeepTrack Logo" />
           </Link>
         </div>
       </div>
