@@ -1,11 +1,7 @@
 .services {
   padding: 2rem;
   background-color: #0073e6;
-<<<<<<< HEAD
   color: #fff;
-=======
-  color: white;
->>>>>>> d576516 (All routes work properly | Placeholders in place | TODO: Need to work on the login logic and the styling of all new placeholders)
   text-align: center;
 }
 
